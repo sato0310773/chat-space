@@ -1,43 +1,49 @@
 ##usersテーブル
  
-|record|column  |other      |
-|:-----|---------:|----------:|
+|name|type|option|
+|:-----|:---------:|----------:|
 | id      |integer|           |
 |name     |string |null :false|
-|user_id  |integer|           |
 |password |string |           |
-||       timestamp|           |
-	has_many :messages, as: :messageable
+|created_at|timestamp|        |
+|updated_at|timestamp|        |
+	has_many :messages
 	belongs_to :groups
 
 ##groupsテーブル
 
-|record|column   |other      |
-|:-----|---------:|----------:|
+|name|type|option|
+|:-----|:---------:|----------:|
 | id      |integer|           |
 |name     |string |null :false|
-|         |timestamp|         |
-	has_many :messages, as: :messageable
+|created_at|timestamp|        |
+|updated_at|timestamp|        |
 	has_many :users
+	has_many :messages
 
 ##messagesテーブル
 
-|record|column  |other      |
-|:-----|---------:|----------:|
+|name|type|option|
+|:-----|:---------:|----------:|
 | id      |integer|           |
-|content_id |integer |null :false|
+|content_id |integer|         |
 |group_id|integer|            |
-||       timestamp|           |
-	belongs_to :messageable, polymorphic: true
+|created_at|timestamp|        |
+|updated_at|timestamp|        |
+	belongs_to :user
+	belongs_to :group
+
 
 ##group_usersテーブル
 
-|record|column  |other      |
-|:-----|---------:|----------:|
+|name|type|option|
+|:-----|:---------:|----------:|
 | id      |integer|           |
-|content_id |integer |null :false|
+|content_id |integer |        |
 |group_id|integer|            |
-||       timestamp|           |
+|user_id|  integer|           |
+|created_at|timestamp|        |
+|updated_at|timestamp|        |
 	has_many :users
 	belongs_to :groups
 

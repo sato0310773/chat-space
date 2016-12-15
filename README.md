@@ -45,7 +45,7 @@
 |user_id|  integer|           |
 |created_at|timestamp|        |
 |updated_at|timestamp|        |
-	has_many :users
+	belongs_to :user
 	belongs_to :group
 
 

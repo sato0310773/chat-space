@@ -8,7 +8,7 @@
 |created_at|timestamp|        |
 |updated_at|timestamp|        |
 	has_many :messages
-	belongs_to :groups
+	belongs_to :group
 
 ##groupsテーブル
 

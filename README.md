@@ -46,7 +46,7 @@
 |created_at|timestamp|        |
 |updated_at|timestamp|        |
 	has_many :users
-	belongs_to :groups
+	belongs_to :group
 
 
 

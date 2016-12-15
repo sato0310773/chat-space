@@ -24,12 +24,13 @@
 ##messagesテーブル
 
 |name|type|option|
-|:-----|:---------:|----------:|
-| id      |integer|           |
-|content_id |integer|         |
-|group_id|integer|            |
-|created_at|timestamp|        |
-|updated_at|timestamp|        |
+|:-----|:---------:|----------:  |
+| id      |integer|              |
+|content_id |integer|            |
+|group_id|integer|               |
+|text      |text     |null :false|
+|created_at|timestamp|           |
+|updated_at|timestamp|           |
 	belongs_to :user
 	belongs_to :group
 

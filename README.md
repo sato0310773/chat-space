@@ -8,7 +8,8 @@
 |created_at|timestamp|        |
 |updated_at|timestamp|        |
 	has_many :messages
-	belongs_to :groups
+	has_many :group_users
+	has_many :groups, through::group_users
 
 ##groupsテーブル
 

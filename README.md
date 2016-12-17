@@ -9,7 +9,7 @@
 |updated_at|timestamp|        |
 	has_many :messages
 	has_many :group_users
-	has_many :groups, through::group_users
+	has_many :groups, through: :group_users
 
 ##groupsテーブル
 
@@ -19,7 +19,7 @@
 |name     |string |null :false|
 |created_at|timestamp|        |
 |updated_at|timestamp|        |
-	has_many :users, through::group_users
+	has_many :users, through: :group_users
 	has_many :messages
 	has_many :group_users
 

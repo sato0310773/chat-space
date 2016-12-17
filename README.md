@@ -8,7 +8,8 @@
 |created_at|timestamp|        |
 |updated_at|timestamp|        |
 	has_many :messages
-	belongs_to :groups
+	has_many :group_users
+	has_many :groups, through: :group_users
 
 ##groupsテーブル
 
@@ -18,8 +19,9 @@
 |name     |string |null :false|
 |created_at|timestamp|        |
 |updated_at|timestamp|        |
-	has_many :users
 	has_many :messages
+	has_many :group_users
+	has_many :users, through: :group_users
 
 ##messagesテーブル
 
@@ -44,8 +46,6 @@
 |user_id|  integer|           |
 |created_at|timestamp|        |
 |updated_at|timestamp|        |
-	has_many :users
-	belongs_to :groups
-
-
+	belongs_to :user
+	belongs_to :group
 

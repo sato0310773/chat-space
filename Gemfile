@@ -45,4 +45,6 @@ group :development do
   gem 'spring'
   gem 'haml-rails'
   gem 'font-awesome-rails'
+  gem 'devise'
+  gem 'pry-rails'
 end

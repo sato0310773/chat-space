@@ -1,3 +1,15 @@
+.chat_box{
+	width: ;
+	float: left;
+	&_group{
+		border-color: #eeeeee;
+		padding-left: 40px;
+		&_name{
+			font-size: 20px;
+			color: #333333;
+			padding-top: 35px;
+			float: left;
+		}
 		&_edit{
 		font-size: 20px;
 		line-height: 40px;
@@ -6,3 +18,5 @@
 		padding: 0 20px;
 		float: right;
 		}
+	}
+}

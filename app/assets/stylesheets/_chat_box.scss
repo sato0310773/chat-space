@@ -11,12 +11,83 @@
 			float: left;
 		}
 		&_edit{
-		font-size: 20px;
-		line-height: 40px;
-		margin-top: 28px;
-		margin-right: 40px;
-		padding: 0 20px;
-		float: right;
+			font-size: 20px;
+			line-height: 40px;
+			margin-top: 28px;
+			margin-right: 40px;
+			padding: 0 20px;
+			float: right;
+		}
+		&_member{
+			font-size: 12px;
+			margin-top: 15px;
+			color: ##999999;
+		}
+	}
+	&_messages{
+		background-color: #FAFAFA;
+
+		&_contents{
+			height: 100%;
+			padding: 46px 40px 0px 40px;
+
+			&_box{
+				padding-bottom: 40px;
+
+				&_name{
+					font-size: 16px;
+					color: black;
+					float: left;
+				}
+
+				&_time{
+					font-size: 12px;
+					color: #999999;
+					margin-left: 10px;
+					float: left;
+				}
+			}
+			&_text_box{
+				margin-bottom: 40px;
+
+				&_text{
+					font-size: 14px;
+					color: black;
+				}
+			}
+		}
+
+		%_post{
+			height: 50px;
+			width: 75%;
+			padding: 20px 40px 20px 40px;
+			bottom: 0px;
+			background-color: #ddd;
+
+			&_text{
+				line-height: 50px;
+				width: 
+				font-size: 16px;
+				background-color: white;
+				color: #AAAAAA;
+				padding-left: 10px;
+				float: left;
+				display: block;
+
+				&_icon{
+					float: right;
+					padding-top: 15px;
+					margin-top: 15px;
+					color: black
+				}
+			}
+			&_buttom{
+				line-height: 50px;
+				padding: 0px 25px;
+				margin-left: 15px;
+				color: white
+				float: right;
+			}
 		}
 	}
 }

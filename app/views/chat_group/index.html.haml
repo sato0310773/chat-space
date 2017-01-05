@@ -1,0 +1,54 @@
+%p.layout-notice チャットグループが作成されたよ。
+.layout
+  .chat
+
+    .chat-side
+      .chat-user
+        .chat-user__name 佐藤
+        .chat-user__icon
+          %i.fa.fa-pencil-square-o
+          %i.fa.fa-cog
+      %ul.chat-groups
+        %li.chat-group
+          %a.chat-group__link
+            %p.chat-group__name 早稲田
+            %p.chat-group__message Hi
+        %li.chat-group
+          %a.chat-group__link
+            %p.chat-group__name 慶応
+            %p.chat-group__message Hi
+        %li.chat-group
+          %a.chat-group__link
+            %p.chat-group__name 明治
+            %p.chat-group__message Hi
+
+    .chat-main
+      .chat-header
+        .chat-header__left
+          .chat-header__left__group sampleグループ</br>
+          .chat-header__left__member Members: 佐藤
+        .chat-header__right
+          .chat-header__right__icon Edit
+
+      .chat-body
+        .chat-body__message
+          .chat-body__message__header
+            .chat-body__message__header__name 佐藤
+            .chat-body__message__header__time 2017/1/5
+          .chat-body__message__body Hi
+        .chat-body__message
+          .chat-body__message__header
+            .chat-body__message__header__name 佐藤
+            .chat-body__message__header__time 2017/1/5
+          .chat-body__message__body Hi
+        .chat-body__message
+          .chat-body__message__header
+            .chat-body__message__header__name 佐藤
+            .chat-body__message__header__time 2017/1/5
+          .chat-body__message__body great-fantastic
+
+      .chat-footer
+        .chat-footer__body
+          %textarea.chat-footer__body__message(style = "font-size:16px;" rows = "1" placeholder = "type a message")
+        .fa.fa-image
+        .chat-footer__button Send

@@ -1,5 +1,5 @@
 .chat_box{
-	width: ;
+	width: 1140px;
 	float: left;
 	&_group{
 		border-color: #eeeeee;
@@ -21,7 +21,7 @@
 		&_member{
 			font-size: 12px;
 			margin-top: 15px;
-			color: ##999999;
+			color: #999999;
 		}
 	}
 	&_messages{
@@ -66,7 +66,7 @@
 
 			&_text{
 				line-height: 50px;
-				width: 
+				width: 88%;
 				font-size: 16px;
 				background-color: white;
 				color: #AAAAAA;
@@ -85,7 +85,7 @@
 				line-height: 50px;
 				padding: 0px 25px;
 				margin-left: 15px;
-				color: white
+				color: white;
 				float: right;
 			}
 		}

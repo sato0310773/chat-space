@@ -25,14 +25,22 @@ body{
 }
 
 .layout-notice{
-  background-color: $background-blue;
   height: 30px;
   line-height: 30px;
   color: #FFF;
   text-align: center;
   letter-spacing: 1px;
+  background-color: $background-blue;
 }
 
+.layout-alert{
+  height: 30px;
+  line-height: 30px;
+  color: #FFF;
+  text-align: center;
+  letter-spacing: 1px;
+  background-color: $background-red;
+}
 
 .chat-side{
   width: 300px;

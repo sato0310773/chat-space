@@ -2,13 +2,14 @@
 	width: 1140px;
 	float: left;
 	&_group{
-		border-color: #eeeeee;
+		border-color: #eee;
 		padding-left: 40px;
 		&_name{
 			font-size: 20px;
-			color: #333333;
+			color: #333;
 			padding-top: 35px;
 			float: left;
+			font-color: red;
 		}
 		&_edit{
 			font-size: 20px;
@@ -21,7 +22,7 @@
 		&_member{
 			font-size: 12px;
 			margin-top: 15px;
-			color: #999999;
+			color: #999;
 		}
 	}
 	&_messages{
@@ -42,7 +43,7 @@
 
 				&_time{
 					font-size: 12px;
-					color: #999999;
+					color: #999;
 					margin-left: 10px;
 					float: left;
 				}
@@ -69,7 +70,7 @@
 				width: 88%;
 				font-size: 16px;
 				background-color: white;
-				color: #AAAAAA;
+				color: #AAA;
 				padding-left: 10px;
 				float: left;
 				display: block;

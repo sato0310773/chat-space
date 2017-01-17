@@ -2,36 +2,36 @@
 	width: 300px;
 	float: left;
 
-	&_user{
+	&__user{
 		background-color: #253141;
 		height: 96px;
 		padding: 0 20px;
 
-		&_name{
+		&__name{
 		 font-weight: bold;
 		 color: white;
 		 margin-top: 40px;
 		 float:left;
 		}
 
-		&_icon--left{
+		&__icon--left{
 			color: white
 			font-size;
 			margin: 40px 5px 0px 5px;
 			float: right;
 		}
 	}
-	&_contents{
+	&__contents{
 		padding: 0px 20px;
 		height: 100%;
 		background-color: #2f3e51;
 
-		&_box{
+		&__box{
 			font-size: 15px;
 			padding-bottom: 40px;
 		}
 
-		&_messages{
+		&__messages{
 			font-size: 11px;
 			padding-bottom: 40px;
 		}

@@ -173,21 +173,18 @@ body{
 }
 
 .chat-footer{
-    position: absolute;
-      right: 0;
-      bottom: 0;
-      padding: 20px 40px;
-      background-color: #dddddd;
-      width: 960px;
+  background-color: #ddd;
+  padding: 20px 40px;
+  bottom: 0;
+
   &__body{
-    float: left;
-    width: calc(100% - 115px);
-    height: 50px;
-    position: relative;
+    width: calc(100% - 140px);
+    display: inline-block;
+    height: 57px;
 
     &__message{
       width: 100%;
-      padding: 13px;
+      padding: 15px;
       border: none;
       resize: none;
     }
@@ -202,8 +199,7 @@ body{
   &__button{
     background-color: $background-blue;
     color: white;
-    padding: 13px 30px;
+    padding: 15px 30px;
     float: right;
-
   }
 }

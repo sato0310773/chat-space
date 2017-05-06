@@ -54,6 +54,7 @@ body{
   height: 60px;
   padding: 20px;
   color: #FFF;
+  color: white;
 
   &__name{
     font-size: 16px;
@@ -67,6 +68,10 @@ body{
     display: inline-block;
     line-height: 60px;
     float:right;
+    color: white; 
+    .fa{
+      color: white
+    }
   }
 
 }
@@ -192,6 +197,7 @@ body{
   }
 
   .fa{
+    color: white;
     position: absolute;
     padding: 18px 0 0 0;
   }
